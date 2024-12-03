@@ -1,0 +1,20 @@
+<script>
+export let contacts = [
+            {
+                "name":{"first":"stephanie","last":"dyck"},
+                "email":"stephanie@email.com"
+            },
+            {
+                "name":{"first":"jane","last":"doe"},
+                "email":"jane@email.com"
+            },
+            {
+                "name":{"first":"john","last":"doe"},
+                "email":"john@email.com"
+            },
+            {
+                "name":{"first":"beth","last":"white"},
+                "email":"beth@email.com"
+            }
+        ]
+</script>
