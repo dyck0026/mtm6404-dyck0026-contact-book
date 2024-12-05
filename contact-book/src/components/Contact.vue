@@ -1,5 +1,5 @@
 <script setup>
-import { contacts } from './Contacts.vue'
+import { array } from './Contacts.vue'
 </script>
 
 <template>
@@ -10,10 +10,11 @@ import { contacts } from './Contacts.vue'
 <style>
 .contactcard {
   background-color: rgb(55, 55, 55);
-  width: 100%;
   border-radius: 15px;
   padding: 5px;
   margin: 20px 0;
+  display: block;
+  width: 100%;
 }
 </style>
 
@@ -23,4 +24,3 @@ export default {
     props: ['props']
 }
 </script>
-
