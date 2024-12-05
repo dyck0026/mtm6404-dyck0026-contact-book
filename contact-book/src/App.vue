@@ -1,6 +1,8 @@
 <script setup>
 import ContactCard from './components/contact.vue'
 import { array } from './components/Contacts.vue'
+import { getCurrentInstance } from 'vue'
+const instance = getCurrentInstance()
 let contacts = array
 let contactinfo = {}
 
@@ -29,9 +31,11 @@ function compareFirst(a, b) {
 }
 function first() {
   contacts.sort(compareFirst)
+  instance?.proxy?.$forceUpdate()
 }
 function last() {
   contacts.sort(compareLast)
+  instance?.proxy?.$forceUpdate()
 }
 function addContact() {
   let form = document.querySelector("#addform")
